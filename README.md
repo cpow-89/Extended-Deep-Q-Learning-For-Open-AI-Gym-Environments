@@ -1,7 +1,7 @@
 # Extended Deep Q-Learning for Multilayer Perceptron
 
 This project includes the code for an extended version of the Deep Q-Learning algorithm which I wrote during my [Deep Reinforcement Learning Nanodegree](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893) @ Udacity. 
-The code is inspired by the [Dvanilla DQN algorithm](https://github.com/udacity/deep-reinforcement-learning/tree/master/dqn) provided by Udacity.
+The code is inspired by the [vanilla DQN algorithm](https://github.com/udacity/deep-reinforcement-learning/tree/master/dqn) provided by Udacity.
 
 Deep Q-Learning for Multilayer Perceptron<br>
 \+ Fixed Q-Targets<br>

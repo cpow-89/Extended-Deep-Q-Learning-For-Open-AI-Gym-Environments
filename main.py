@@ -25,15 +25,6 @@ def main():
     env = gym.make(config["general"]["env_name"])
     env.seed(config["general"]["seed"])
     agent = Agent(config=config)
-    # watch an untrained agent
-    state = env.reset()
-    for j in range(200):
-        action = agent.act(state)
-        state, reward, done, _ = env.step(action)
-        if done:
-            break
-
-    env.close()
 
     if config["train"]["run_training"]:
         scores = sessions.train(agent, env, config)
@@ -42,6 +33,8 @@ def main():
     else:
         agent.load()
         sessions.test(agent, env, config)
+
+    env.close()
 
 
 if __name__ == "__main__":

@@ -1,0 +1,38 @@
+{
+  "general" : {
+                "env_name" : "Acrobot-v1",
+                "monitor_dir" : ["monitor"],
+                "checkpoint_path": ["checkpoints"],
+                "seed": 0,
+                "state_size" : 6,
+                "action_size" : 3,
+                "average_score_for_solving" : 0.0
+              },
+
+  "train" : {
+              "nb_episodes": 3000,
+              "episode_length": 2000,
+              "batch_size" : 256,
+              "epsilon_high": 1.0,
+              "epsilon_low": 0.01,
+              "epsilon_decay": 0.995,
+              "run_training" : true
+             },
+
+  "agent" : {
+              "learning_rate": 0.0005,
+              "gamma" : 0.99,
+              "tau" : 0.001,
+              "update_rate" : 4
+            },
+
+  "buffer" : {
+               "size" : 100000
+             },
+
+  "model" : {
+               "fc1_nodes" : 256,
+	           "fc2_adv" : 256,
+	           "fc2_val" : 128
+            }
+}
